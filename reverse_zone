@@ -1,0 +1,20 @@
+; BIND reverse data file for dns lab.loc ;
+$TTL 604800
+@ IN SOA
+;
+@ IN NS u3.
+u3.lab.loc. root.u3.lab.loc. (
+20141126 604800 86400 2419200 604800 )
+;Serial
+;Refresh
+;Retry
+;Expire
+;Negative Cache TTL
+1 IN PTR
+2 IN PTR
+3 IN PTR
+10 IN PTR локальной сети
+gw.lab.loc.
+u1.lab.loc.
+u2.lab.loc.
+u3.lab.loc. ; первое число ­ номер (адресс) узла u3 в
