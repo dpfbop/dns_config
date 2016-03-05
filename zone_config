@@ -1,0 +1,21 @@
+; BIND data file for dns lab.loc ;
+$TTL 604800
+@ IN
+SOA u3.lab.loc. root.u3.lab.loc. (
+20141126 604800 86400 2419200 604800 )
+;Serial
+;Refresh
+;Retry
+;Expire
+;Negative Cache TTL
+;
+@ IN
+@ IN
+@ IN
+; далее указывать адресса только для тех узлов, которым выдается статический адресс
+NS u3.lab.loc. A 192.168.0.10 AAAA ::1
+gw IN
+u1 IN
+u2 IN
+u3 IN A 192.168.0.10 ; адресс этого DNS сервера в локальной
+сети
